@@ -4,13 +4,14 @@
   box-sizing: border-box;
 }
 body {
-  background-image: url("/public/bg-desktop-light.jpg");
+  background-image: url("/public/photo.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
   font-family: "Poppins", sans-serif;
   min-height: 100vh;
 }
+
 header {
   font-size: 2rem;
 }
@@ -26,17 +27,18 @@ form input,
 form button {
   padding: 0.5rem;
   font-size: 2rem;
+  outline: none;
   border: none;
   background: white;
 }
 form button {
-  color: #ff6f47;
+  color: #47c8ff;
   background: #f7fffe;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 form button:hover {
-  background: #ff6f47;
+  background: #452f1b;
   color: white;
 }
 .todo-container {
@@ -69,7 +71,7 @@ form button:hover {
 
 .trash-btn,
 .complete-btn {
-  background: #ff6f47;
+  background: #ff4800;
   color: white;
   border: none;
   padding: 1rem;
@@ -98,4 +100,12 @@ form button:hover {
   opacity: 0.5;
 }
 
-/*CUSTOM SELECTOR */
+.title {
+  color: white;
+  text-align: center;
+  text-shadow: 2px 2px 4px #000000;
+  font-size: 3em;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}

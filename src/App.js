@@ -3,13 +3,17 @@ import "./App.css";
 import Form from "./components/form";
 import TodoList from "./components/TodoList";
 
+import { createContext } from "react";
+export const ThemeContext = createContext("null");
+
 function App() {
   const [inputText, setInputText] = useState("");
   const [todos, setTodos] = useState([]);
+
   return (
     <div className="App">
       <header>
-        <h1>Todo List</h1>
+        <h1 className="title">Todo List</h1>
       </header>
       <Form
         inputText={inputText}
